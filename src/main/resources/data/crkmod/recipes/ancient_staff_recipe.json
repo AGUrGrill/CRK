@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "G": {
+      "item": "crkmod:gem"
+    },
+    "T": {
+          "item": "minecraft:ghast_tear"
+    },
+    "S": {
+              "item": "minecraft:wooden_sword"
+        }
+  },
+  "pattern": [
+    " T ",
+    "GGG",
+    " S "
+  ],
+  "result": {
+    "item": "crkmod:pure_vanilla_staff"
+  },
+  "show_notification": true
+}

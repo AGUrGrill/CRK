@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:netherite_block"
+  },
+  "base": {
+    "item": "minecraft:netherite_sword"
+  },
+  "result": {
+    "item": "crkmod:dark_cacao_sword"
+  },
+  "template": {
+    "item": "crkmod:gem"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "G": {
+      "item": "crkmod:gem"
+    },
+    "R": {
+          "item": "minecraft:red_dye"
+    }
+  },
+  "pattern": [
+    "RRR",
+    "RGR"
+  ],
+  "result": {
+    "item": "crkmod:strawberry_crepe_helmet"
+  },
+  "show_notification": true
+}

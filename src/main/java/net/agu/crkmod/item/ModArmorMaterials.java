@@ -9,10 +9,11 @@ import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.function.Supplier;
 
-public enum ModArmorMaterials implements ArmorMaterial {
-    GEM("gem", 26, new int[]{ 5, 7, 5, 4}, 25,
+public enum ModArmorMaterials implements ArmorMaterial {;
+    /*
+    GEM("gem", 26, new int[]{ 5, 7, 5, 4}, 20,
             SoundEvents.ARMOR_EQUIP_CHAIN, 1f, 0f, () -> Ingredient.of(ModItems.GEM.get()));
-
+     */
     private final String name;
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;

@@ -2,11 +2,15 @@ package net.agu.crkmod.item.custom;
 
 import net.agu.crkmod.item.client.StrawberryCrepeArmorRenderer;
 import net.minecraft.client.model.HumanoidModel;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import org.jetbrains.annotations.NotNull;
 import software.bernie.geckolib.animatable.GeoItem;
@@ -39,6 +43,12 @@ public class StrawberryCrepeArmorItem extends ArmorItem implements GeoItem {
                 return this.renderer;
             }
         });
+    }
+
+    @Override
+    public void onInventoryTick(ItemStack stack, Level level, Player player, int slotIndex, int selectedIndex) {
+        player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 10));
+        super.onInventoryTick(stack, level, player, slotIndex, selectedIndex);
     }
 
     private PlayState predicate(AnimationState animationState) {

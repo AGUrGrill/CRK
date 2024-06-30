@@ -1,6 +1,7 @@
 package net.agu.crkmod;
 
 import com.mojang.logging.LogUtils;
+import net.agu.crkmod.event.ModEvents;
 import net.agu.crkmod.item.ModCreativeModeTabs;
 import net.agu.crkmod.item.ModItems;
 import net.minecraft.client.Minecraft;
@@ -54,6 +55,8 @@ public class CRKMod
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(new ModEvents());
+
         modEventBus.addListener(this::addCreative);
     }
 

@@ -21,6 +21,8 @@ public class ModCreativeModeTabs {
                         // Add modded items to tab
                         pOutput.accept(ModItems.GEM.get());
                         pOutput.accept(ModItems.STRAWBERRY_CREPE_HELMET.get());
+                        pOutput.accept(ModItems.PURE_VANILLA_STAFF.get());
+                        pOutput.accept(ModItems.DARK_CACAO_SWORD.get());
                     })
                     .build());
 

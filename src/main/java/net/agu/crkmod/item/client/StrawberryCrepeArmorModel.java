@@ -19,6 +19,6 @@ public class StrawberryCrepeArmorModel extends GeoModel<StrawberryCrepeArmorItem
 
     @Override
     public ResourceLocation getAnimationResource(StrawberryCrepeArmorItem strawberryCrepeArmorItem) {
-        return new ResourceLocation(CRKMod.MODID, "animations/strawberry_crepe_helmet.json");
+        return new ResourceLocation(CRKMod.MODID, "animations/strawberry_crepe_helmet.animation.json");
     }
 }
